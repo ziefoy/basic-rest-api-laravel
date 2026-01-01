@@ -10,4 +10,8 @@ class Pegawai extends Model
     use HasFactory;
     protected $table = 'pegawais';
     protected $fillable = ['nama', 'jabatan', 'email'];
+    public function user()
+    {
+    return $this->belongsTo(User::class);
+    }
 }
