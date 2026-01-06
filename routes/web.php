@@ -21,4 +21,4 @@ Route::get('/', function () {
 // // //Form hapus pegawai
 // Route::delete('/pegawai/{pegawai}', [PegawaiController::class, 'destroy'])->name('pegawai.destroy');
 
-Route::resource('pegawai', PegawaiController::class);
+// Route::resource('pegawai', PegawaiController::class);

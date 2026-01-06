@@ -63,4 +63,11 @@ class AuthApiController extends Controller
         'user' => $user
        ], 201);
     }
+
+    public function index(){
+        return response()->json([
+            'success' => true,
+            'users' => User::with('pegawai')->get()
+        ]);
+    }
 }

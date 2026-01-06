@@ -12,6 +12,7 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::get('/me', [AuthApiController::class, 'me']);
     Route::post('/logout', [AuthApiController::class, 'logout']);
     // Route untuk API Pegawai
-    Route::apiResource('pegawai', PegawaiApiController::class);
+    Route::apiResource('/pegawai', PegawaiApiController::class);
+    // Route::get('/users', [AuthApiController::class, 'index']);
 });
 
